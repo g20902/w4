@@ -32,8 +32,8 @@ function result() {
   }
 
   if (document.getElementById("jp").checked) {
-    const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
-    newStory = newStory.replace('華氏', temperature);
+    const temperature =  `$摂氏{Math.round((94-32) * 5 / 9)}`;
+    newStory = newStory.replace('華氏32', temperature);
   }
 
   story.textContent = newStory;
