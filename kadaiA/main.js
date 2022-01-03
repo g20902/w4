@@ -32,7 +32,7 @@ function result() {
   }
 
   if (document.getElementById("jp").checked) {
-    const temperature =  `$摂氏{Math.round((94-32) * 5 / 9)}`;
+    const temperature =  `摂氏${Math.round((94-32) * 5 / 9)}`;
     newStory = newStory.replace('華氏32', temperature);
   }
 
